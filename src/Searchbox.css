@@ -1,12 +1,13 @@
 .Searchbox {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
-    margin: 1.25rem 0.5rem 1.5rem 0.5rem;
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
 }
 
 .Searchbar {
-    width: 50rem ;
+    width: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,4 +44,48 @@
 
 #Search_btn>button:hover {
     color: black;
+    cursor: pointer;
+}
+
+.Search_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 42.3%;
+}
+
+ul {
+    display: none;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    margin: 0.75rem 0rem 0rem -0.75rem;
+    max-height: 11rem;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+form:hover ul {
+    display: block;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+    font-size: 1.05rem;
+    border-bottom: 1px solid lightgray;
+    line-height: 0px;
+}
+
+li:hover {
+   background-color: whitesmoke;
+   cursor: pointer;
+}
+
+form{
+    z-index: 999;
 }

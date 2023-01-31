@@ -12,7 +12,9 @@
     justify-content: center;
     /* flex-flow: row; */
 }
-
+.App_searchbox {
+    
+}
 .App_mapbox {
     height: 70vh;
     width: 100%;
